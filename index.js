@@ -10,7 +10,7 @@ const port = process.env.PORT || parseInt(process.argv.pop()) || 3002;
 server.listen(port, function () {
   console.log("Server listening at port %d", port);
 });
-
+// this is order section
 const ShwarmaOrder = require("./ShawarmaOrder");
 const e = require('express');
 const { exception } = require('console');
@@ -44,7 +44,6 @@ app.post("/payment/:phone", (req, res) => {
   }
   res.end("ok");
 });
-
 app.get("/payment/:phone", (req, res) => {
   // this happens when the user clicks on the link in SMS
   const sFrom = req.params.phone;

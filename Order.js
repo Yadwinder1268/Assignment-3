@@ -1,4 +1,3 @@
-//adding changes in order.js file
 module.exports = class Order{
     constructor(sNumber, sUrl){
         this.sNumber = sNumber;
